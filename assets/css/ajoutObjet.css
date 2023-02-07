@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i {
+	color: white;
+	font-size: 2em;
+    animation: ani 1s  alternate-reverse infinite ;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+	
+}
+@keyframes ani {
+	0% {
+		transform: scale(1);
+		color: white;
+	}
+	100% {
+		transform: scale(1.5);
+		color: rgb(13, 105, 190);
+	}
+}
+body {  
+    background-image: url("../images/fond.gif");
+    background-size: cover;
+    font-family:  Arial;
+
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	height: 100vh;
+	font-size: .9em;
+}
+h1 {
+	color: #f1f1f1;
+	font-size: 3em;
+	letter-spacing: 6px;
+	margin-bottom: 10px;
+	font-family: Abril fatface;
+	text-transform: uppercase;
+}
+
+input , label {
+	transition: all .3s;
+}
+.form form {
+	background-color: white;
+	height: 80%;
+    padding: 1.2em;
+    position: relative;
+
+}
+.card {
+
+	/*background: #131416;*/
+	height: 350px;
+	padding: 1.2em;
+	width: 300px;
+	transform: scale(1.01);
+	display: flex;
+	align-items: center;
+    justify-content: center;
+   
+    z-index: 2;
+
+}
+.card i {
+	color: white;
+	text-shadow: 0 0 1px white;
+}
+.card h3 {
+	color: white;
+	margin-left: 5px;
+	font-family: Gabriola;
+	letter-spacing: 5px;
+	font-size: 4em;
+
+
+}
+
+input {
+	padding: 8px 5px;
+	width: 100%;
+    border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	
+}
+.ddn-form input{
+	border: none;
+}
+.select-form label ,.ddn-form label {
+	font-size: 1.2em;
+	color: #00324F;
+}
+.spec-form p  {
+	font-size: 1.2em;
+    margin: 10px 0;
+    color: #00324F;
+}
+.spec-form input {
+      width: 50px;
+}
+.input-form ,.select-form {
+	display: flex;
+	flex-direction: column-reverse;
+	margin: 1.7em 0;
+}
+
+
+.select-form select {
+	padding: 8px 5px;
+	width: 100%;
+    border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+}
+.submit-form {
+	text-align: right;
+
+}
+button {
+	color: white;
+	border :none;
+	padding: 10px 15px;
+	background-color: #00324F;
+	margin-top: 50px;
+}
+.input-form label {
+
+	position: absolute;
+	transform: translate(12px,-9px);
+	cursor: text;
+	transform-origin: left top; 
+}
+
+.input-form:focus ~label{
+	border:none;
+	color: red;
+}
+input:focus ,
+input:not(:placeholder-shown){
+	border-bottom: 2px solid F;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label{
+   transform: translate(12px, -30px) scale(.8);
+}
+
+
+input.btn.btn-primary {
+	width: 150px;
+	background-color: #1c1a1a;
+}
+
+
+
+
